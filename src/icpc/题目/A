@@ -1,0 +1,36 @@
+
+偷吃糖果
+
+Time Limit: 1000Ms
+
+Memory Limit: 65536KB
+Description
+小鱼喜欢吃糖果。他有两盒糖果，两盒糖果分别仅由小写字母组成的字符串s和字符串t构成。其中'a'到'z'表示具体的某种糖果类别。
+他原本打算送给他喜欢的女生，但是要送给女孩子的话两盒糖果不能有差别(即字符串s和t完全相同)。所以，他决定偷吃几块，他吃糖果的策略是每次选出一盒糖果中两个连续的同种类别的糖果，然后吃掉其中一块。该策略可以使用多次。
+例如一盒糖果是'rrrjj'，他可以把这盒糖果变成'rrjj'或者'rrrj'。现在你要告诉小鱼，经过他多次偷吃糖果之后，两盒糖果能否送给他喜欢的女孩子。如果可以输出'Yes'，如果不行输出'No'。
+Input
+第一行一个T，表示T组测试数据。每组测试数据格式如下。
+第一行表示字符串s，第二行表示字符串t。
+1 ≤ T ≤ 100
+Each character of s, t will be between 'a' and 'z'.
+1 ≤ length of string s ≤ 1000
+1 ≤ length of string t ≤ 1000
+Output
+对于每组测试数据，输出Yes，或者No。
+Sample Input
+
+2
+rrrjj
+rrrj
+rj
+jr
+
+Sample Output
+
+Yes
+No
+
+Hint
+题目中的第一个样例：
+第一盒糖果：rrrjj -> rrjj -> rjj -> rj
+第二盒糖果：rrrj -> rrj -> rj
