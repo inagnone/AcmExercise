@@ -1,3 +1,5 @@
+package Shortandlong.src;
+
 import java.util.Scanner;
 
 

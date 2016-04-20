@@ -42,12 +42,12 @@ public class MainJWater {
 				world[i] = new area(H, W);
 			}
 			
-			int time = 0;
+			long time = 0;
 			int city = 0;
 			for(int i=0;i<N;i++){
-				city = world[i].heigh*world[i].width + city;				
+				time = world[i].width * (heightest+1 - world[i].heigh) + time;		
 			}
-			time = (heightest+1)*leng - city;
+		
 			System.out.println(time);
 		}
 		
