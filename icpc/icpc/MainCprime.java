@@ -26,18 +26,24 @@ public class MainCprime {
 		return primes;
 	}
 	
+	/**
+	 * 更据容斥原理算1～n中包含与n互质的个数
+	 * @param prime
+	 * @param n
+	 * @return
+	 */
 	static int rongchi(ArrayList<Integer> prime,int n){
 		int sum = 0,j,flag,temp;
-		for(int i=1;i<(1<<prime.size());i++){
+		for(int i=1;i<(1<<prime.size());i++){			//i的二进制数中1的对应为表示包含在prime中的对应位的质因子
 			temp = 1;
 			flag = 0;
 			for(j=0;j<prime.size();j++){
-				if((i & (1<<j)) != 0){
+				if((i & (1<<j)) != 0){				//判断当前i对应二进制数中1的个数，即用到的质因子的个数
 					flag++;
 					temp *= prime.get(j);
 				}
 			}
-			if(flag % 2 ==0){
+			if(flag % 2 ==0){			//跟据质因子的个数奇加偶减
 				sum -= n/temp;
 			}else{
 				sum += n/temp;

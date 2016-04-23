@@ -1,0 +1,29 @@
+ Cut the Cake
+Time Limit : 2000/1000ms (Java/Other)   Memory Limit : 32768/32768K (Java/Other)
+Total Submission(s) : 1   Accepted Submission(s) : 1
+Problem Description
+MMM got a big big big cake, and invited all her M friends to eat the cake together. Surprisingly one of her friends HZ took some (N) strawberries which MMM likes very much to decorate the cake (of course they also eat strawberries, not just for decoration). HZ is in charge of the decoration, and he thinks that it's not a big deal that he put the strawberries on the cake randomly one by one. After that, MMM would cut the cake into M pieces of sector with equal size and shape (the last one came to the party will have no cake to eat), and choose one piece first. MMM wants to know the probability that she can get all N strawberries, can you help her? As the cake is so big, all strawberries on it could be treat as points.
+ 
+
+Input
+First line is the integer T, which means there are T cases. For each case, two integers M, N indicate the number of her friends and the number of strawberry. (2 < M, N <= 20, T <= 400)
+ 
+
+Output
+As the probability could be very small, you should output the probability in the form of a fraction in lowest terms. For each case, output the probability in a single line. Please see the sample for more details.
+ 
+
+Sample Input
+
+2
+3 3
+3 4
+
+ 
+
+Sample Output
+
+1/3
+4/27
+
+ 
